@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+:root {
+   --ig-primary-button: rgb(0, 149, 246);
+   --ig-primary-button-hover: rgb(24, 119, 242);
+   --ig-elevated-separator: rgb(54, 54, 54);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+
+main {
+   margin-top: 40px;
+   display: flex;
+   flex-direction: row;
+}
+
+.container {
+   align-items: center;
+}
+
+.container .login {
+   border: 1px solid var(--ig-elevated-separator);
+   padding: 30px;
+   width: 290px;
+  
+   color: white;
+}
+
+.container .login img {
+   max-width: 220px;
+   display: block;
+   margin: auto;
+   margin-bottom: 40px;
+}
+
+.container .login input {
+   margin-top: 7px;
+   display: block;
+   width: 92.34%;
+   background-color: #121212;
+   padding: 10px;
+   border: 1.4px solid var(--ig-elevated-separator);
+   border-radius: 4px;
+   color: white;
+}
+
+.container .login input::placeholder {
+   font-size: 0.9em;
+}
+
+.container .login button {
+   margin-top: 12px;
+   display: block;
+   width: 100%;
+   padding: 8px;
+   color: white;
+   background-color: var(--ig-primary-button);
+   border-radius: 5px;
+   border: none;
+   font-weight: bolder;
+}
+
+.container .login .linhaou {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   margin: 20px 0;
+}
+
+.container .login .linhaou::before,
+.container .login .linhaou::after {
+   content: "";
+   flex: 1;
+   height: 1px;
+   background-color: var(--ig-elevated-separator);
+}
+
+.container .login span {
+   margin: 0 20px;
+   font-size: 0.86em;
+   font-weight: bolder;
+   color: rgb(188, 188, 188);
+}
+
+.container .login a {
+   display: block;
+}
+
+.container .login .containerfacebook {
+   text-align: center;
+}
+.container #facebook {
+   display: inline-flex;
+   margin: auto;
+   text-align: center;
+   align-items: center;
+   text-decoration: none;
+   height: 30px;
+   color: var(--ig-primary-button);
+   font-weight: bold;
+   font-size: 0.9em;
+}
+
+.container #facebook img{
+   width: 25px;
+   margin-right: 8px;
+}
+
+.container #esqueceuasenha {
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   font-size: 0.9em;
+   margin-top: 10px;
+}
+
+.container .registrar {
+   color: white;
+   margin-top: 9px;
+   border: 1px solid var(--ig-elevated-separator);
+   text-align: center;
+   padding: 20px;
+   font-size: 0.9em;
+}
+
+.container .registrar a {
+   color: var(--ig-primary-button);
+   text-decoration: none;
+   font-weight: bolder;
+}
+
+.container .aplicativo {
+   color: white;
+   text-align: center;
+   font-size: 0.9em;
+   margin-top: 10px;
+}
+
+.container .aplicativo img {
+   margin-top: 10px;
+   max-height: 40px;
+}
+
+footer {
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+}
+
+footer ul {
+   list-style: none;
+   display: flex;
+   gap: 15px;
+   font-size: 0.72em;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+footer a {
+   color: rgb(180, 180, 180);
+   text-decoration: none;
+}
+
+footer select {
+   background-color: transparent;
+   color: rgb(180, 180, 180);
+   border: none;
+   font-size: 0.72em;
+}
+
+footer p {
+   color: rgb(180, 180, 180);
+   font-size: 0.72em;
+}
+
+footer .containerfinalrodape {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   margin-bottom: 30px;
+}
+
+@media (max-width: 875px) {
+   .celulares {
+      display: none;
+   }
+   footer {
+      margin-top: 40px;
+   }
+   footer .containerfinalrodape {
+      margin-top: 10px;
+
+   }
+}
+
+@media (max-width: 450px) {
+   .container .login {
+      border: none;
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+
+}
